@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/img/Elecciones/Argentina.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="FORM.css"  >
+  <link rel="stylesheet" href="normalize.css" />
+   <link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Certificado de Escrutinio</title>
+
+
+
+</head>
+
+<header id="cabecera">
+    <p><img id="logo" src="/img/Elecciones/Escudo_de_Argentina.jpg" alt="Logo" width="100" height="112"style="float: left" ></p>
+                                                      <!--450--> 
+    <!--Fecha del dia--><!--Fecha del dia--><!--Fecha del dia--><!--Fecha del dia--><!--Fecha del dia--><!--Fecha del dia-->
+                                                
+    <font size="1" style="float:right" >
+        <script languaje="JavaScript"> 
+        var mydate=new Date() 
+        var year=mydate.getYear() 
+        if (year < 1000) 
+        year+=1900 
+        var day=mydate.getDay() 
+        var month=mydate.getMonth() 
+        var daym=mydate.getDate() 
+        if (daym<10) 
+        daym="0"+daym 
+        var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+        var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+        document.write("<font color='black' face='Georgia' style='font-size:8pt'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font>") 
+        </script></font>
+
+        <div id="titulo">
+            <h5> JUZGADO FEDERAL CON COMPETENCIA ELECTORAL</h5>
+            <h4> DISTRITO BUENOS AIRES </h4>
+            <h6> ELECCIONES PRIMARIAS, ABIERTAS, SIMULTANEAS Y OBLIGATORIAS </h6>
+            <h3> CERTIFICADO DE ESCRUTINIO</h3>
+        </div>    
+<!--
+
+        <div class="seccion">
+             <form>
+                  <p>SECCION ELECTORAL</p>
+                  <input type="text" name="seccion" size="6">
+                  <p>CIRCUITO</p>
+                  <input type="tel" name="circuito" size="1">
+                  <p>MESA</p>
+                  <input type="tel" name="mesa" size="1">
+               
+            </form>
+         </div>
+        </div>
+        
+        -->
+
+
+
+</header>
+
+<script type="text/javascript">
+  /**
+   * Funcion que se ejecuta al seleccionar una opcion del primer select
+   */
+  function cargarSelect2(valor)
+  {
+      /**
+       * Este array contiene los valores sel segundo select
+       * Los valores del mismo son:
+       *  - hace referencia al value del primer select. Es para saber que valores
+       *  mostrar una vez se haya seleccionado una opcion del primer select
+       *  - value que se asignara
+       *  - testo que se asignara
+       */
+      var arrayValores=new Array(
+
+/* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 *//* seccion 1 */
+      new Array(1,1,"Campana"),new Array(1,2,"Escobar"),new Array(1,3,"General Las Heras"),new Array(1,4,"General Rodríguez"),new Array(1,5,"General San Martín"),
+      new Array(1,6,"Hurlingham"),new Array(1,7,"Ituzaingó"),new Array(1,8,"José C. Paz"),new Array(1,9,"Luján"),new Array(1,10,"Malvinas Argentinas"),
+      new Array(1,11,"Marcos Paz"),new Array(1,12,"Mercedes"),new Array(1,13,"Merlo"),new Array(1,14,"Moreno"),new Array(1,15,"Morón"),
+      new Array(1,16,"Navarro"),new Array(1,17,"Pilar"),new Array(1,18,"San Fernando"),new Array(1,19,"San Isidro"),new Array(1,20,"San Miguel"),
+      new Array(1,21,"Suipacha"),new Array(1,22,"Tigre"),new Array(1,23,"Tres de Febrero"),new Array(1,24,"Vicente López"),
+
+/* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 *//* seccion 2 */                                  
+      new Array(2,1,"Arrecifes"),new Array(2,2,"Baradero"),new Array(2,3,"Capitán Sarmiento"),new Array(2,4,"Carmen de Areco"),new Array(2,5,"Colón"),
+      new Array(2,6,"Exaltación de la Cruz"),new Array(2,7,"Pergamino"),new Array(2,8,"Ramallo"),new Array(2,9,"Rojas"),new Array(2,10,"Salto"),
+      new Array(2,11,"San Andrés de Giles"),new Array(2,12,"San Antonio de Areco"),new Array(2,13,"San Nicolás"),new Array(2,14,"San Pedro"),new Array(2,15,"Zárate"),
+      
+/* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 *//* seccion 3 */
+      new Array(3,1,"Almirante Brown"),new Array(3,2,"Avellaneda"),new Array(3,3,"Berazategui"),new Array(3,4,"Berisso"),new Array(3,5,"Brandsen"),
+      new Array(3,6,"Cañuelas"),new Array(3,7,"Ensenada"),new Array(3,8,"Esteban Echeverría"),new Array(3,9,"Ezeiza"),new Array(3,10,"Florencio Varela"),
+      new Array(3,11,"La Matanza"),new Array(3,12,"Lanús"),new Array(3,13,"Lobos"),new Array(3,14,"Lomas de Zamora"),new Array(3,15,"Magdalena"),
+      new Array(3,16,"Presidente Perón"),new Array(3,17,"Punta Indio"),new Array(3,18,"Quilmes"),new Array(3,19,"San Vicente"),
+
+/* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 *//* seccion 4 */                                 
+      new Array(4,1,"Alberti"),new Array(4,2,"Bragado"),new Array(4,3,"Carlos Casares"),new Array(4,4,"Carlos Tejedor"),new Array(4,5,"Chacabuco"),
+      new Array(4,6,"Chivilcoy"),new Array(4,7,"Florentino Ameghino"),new Array(4,8,"General Arenales"),new Array(4,9,"General Pinto"),
+      new Array(4,10,"General Viamonte"),new Array(4,11,"General Villegas"),new Array(4,12,"Hipólito Yrigoyen"),new Array(4,13,"Junín"),new Array(4,14,"Leandro N. Alem"),
+      new Array(4,15,"Lincoln"),new Array(4,16,"Nueve de Julio"),new Array(4,17,"Pehuajó"),new Array(4,18,"Rivadavia"),new Array(4,19,"Trenque Lauquen"),
+
+/* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 *//* seccion 5 */               
+      new Array(5,1,"Ayacucho"),new Array(5,2,"Balcarce"),new Array(5,3,"Castelli"),new Array(5,4,"Chascomús"),new Array(5,5,"Dolores"),new Array(5,6,"General Alvarado"),
+      new Array(5,7,"General Belgrano"),new Array(5,8,"General Guido"),new Array(5,9,"General Lavalle"),new Array(5,10,"General Madariaga"),new Array(5,11,"General Paz"),
+      new Array(5,12,"General Pueyrredón"),new Array(5,13,"La Costa"),new Array(5,14,"Las Flores"),new Array(5,15,"Lezama"),new Array(5,16,"Lobería"),
+      new Array(5,17,"Maipú"),new Array(5,18,"Mar Chiquita"),new Array(5,19,"Monte"),new Array(5,20,"Necochea"),new Array(5,21,"Pila"),new Array(5,22,"Pinamar"),
+      new Array(5,23,"Rauch"),new Array(5,24,"San Cayetano"),new Array(5,25,"Tandil"),new Array(5,26,"Tordillo"),new Array(5,27,"Villa Gesell"),
+
+/* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 *//* seccion 6 */                          
+      new Array(6,1,"Adolfo Alsina"),new Array(6,2,"Adolfo González Chaves"),new Array(6,3,"Bahía Blanca"),new Array(6,4,"Benito Juárez"),new Array(6,5,"Coronel Dorrego"),
+      new Array(6,6,"Coronel Pringles"),new Array(6,7,"Coronel Rosales"),new Array(6,8,"Coronel Suárez"),new Array(6,9,"Daireaux"),new Array(6,10,"Guaminí"),                
+      new Array(6,11,"General Lamadrid"),new Array(6,12,"Laprida"),new Array(6,13,"Monte Hermoso"),new Array(6,14,"Patagones"),new Array(6,15,"Pellegrini"),
+      new Array(6,16,"Puan"),new Array(6,17,"Saavedra"),new Array(6,18,"Salliqueló"),new Array(6,19,"Tres Arroyos"),new Array(6,20,"Tres Lomas"),
+      new Array(6,21,"Tornquist"),new Array(6,22,"Villarino"),
+
+/* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 *//* seleccion 7 */                                   
+                             
+      new Array(7,1,"Azul"), new Array(7,2,"Bolívar"),new Array(7,3,"General Alvear"),new Array(7,4,"Olavarría"),new Array(7,5,"Roque Pérez"),
+      new Array(7,6,"Saladillo"),new Array(7,7,"Tapalqué"),new Array(7,8,"Veinticinco de Mayo")
+                                 
+    );
+      if(valor==0)                                 
+      {
+          // desactivamos el segundo select
+          document.getElementById("select2").disabled=true;
+      }else{
+          // elimi                                 namos todos los posibles valores que contenga el select2
+          document.getElementById("select2").options.length=0;
+   
+          // añadimos los nuevos valores al select2
+          document.getElementById("select2").options[0]=new Option("Selecciona una opcion", "0");
+          for(i=0;                                 i<arrayValores.length;i++)
+          {
+              // unicamente añadimos las opciones que pertenecen al id seleccionado
+              // del primer select
+              if(arrayValores[i][0]==valor)
+              {
+                  document.getElementById("select2").options[document.getElementById("select2").options.length]=new Option(arrayValores[i][2], arrayValores[i][1]);
+              }
+          }
+   
+          // habilitamos el segundo select
+          document.getElementById("select2").disabled=false;
+      }
+  }
+   
+  /**
+   * Una vez selecciona una valor del segundo selecte, obtenemos la información
+   * de los dos selects y la mostramos
+   */
+  function seleccinado_select2(value)
+  {
+      var v1 = document.getElementById("select1");
+      var valor1 = v1.options[v1.selectedIndex].value;
+      var text1 = v1.options[v1.selectedIndex].text;
+      var v2 = document.getElementById("select2");
+      var valor2 = v2.options[v2.selectedIndex].value;
+      var text2 = v2.options[v2.selectedIndex].text;
+   
+      alert("Se ha seleccionado la ("+text1+")  y el Pardido  ("+text2+")");
+  }
+  </script>
+
+  <div class="partido">
+  <form id="uno">
+    <!--  <p  style="float: left: ;" >   -->
+      <p>
+
+        <select id='select1' onchange='cargarSelect2(this.value);'>
+          <option value='0'>Selecciona una Seccion</option>
+          <option value='1'>Seccion 1</option>
+          <option value='2'>Seccion 2</option>
+          <option value='3'>Seccion 3</option>
+          <option value='4'>Seccion 4</option>
+          <option value='5'>Seccion 5</option>
+          <option value='6'>Seccion 6</option>
+          <option value='7'>Seccion 7</option>
+      </select>
+      </p>
+  </form>
+  </div>
+
+      <div class="seccion">
+        <form>
+     <!-- <p style="float: right" >    -->
+       <p>Partido
+          <select id='select2' onchange='seleccinado_select2();' disabled>
+            
+              <option value='0'>Selecciona el Partido </option>
+          </select>
+      </p>
+  </form>
+</div>
+
+
+<div class="circuito" >
+    <form>
+        <p>Circuito <input type="text" name="mesa"  placeholder="Circuito" maxlength="4" required size="1"></p>
+    </form>
+</div>
+    <div class="mesa">
+      <form>
+        <p>Mesa<input type="text" name="circuito"  placeholder="Mesa" maxlength="4" required size="1"></p>
+      </form>
+    </div>
+
+    <body id="fondo" >
+      
+<div class="urna">
+
+    <table class="egt" style="width:80%">
+        <tr>
+          <th></th>
+          <th>Numeros</th> 
+          
+        </tr>
+        <tr>
+          <th>Cantidad de Ciudadanos que han Votado</th>
+          <th><input type="text" name="cantidad"  placeholder="Votantes" required size="3" maxlength="4"  ></th>
+          
+        </tr>
+        <tr>
+          <th>Cantidad de Sobres utilizados en la Urna</th>
+          <th><input type="text" name="sobres"  placeholder="Sobres"  required size="3" maxlength="4" ></th>
+          
+        </tr>
+        <tr>
+          <th>Diferencia</th>
+          <th><input type="text" name="resta"  placeholder="Resultado"  required size="3" maxlength="4" ></th>
+          
+        </tr>
+      </table>
+  
+</div>
+
+<div class="agrupaciones">
+    <table style="width:100%">
+        <tr>
+            <th rowspan="2" >N°</th>
+        
+            <th rowspan="2">Agrupaciones Politicas</th>
+        
+            <th rowspan="2">Listas </th>
+        
+            <th>Gobernador</th>
+  
+            <th>Legisladores Provinciales</th>
+  
+            <th> Intendentes Consejales y Consejero </th>
+        
+          </tr>
+      
+          <tr>
+        
+            <th>Total de Votos para la Lista</th>
+        
+            <th>Total de Votos para la Lista</th>
+  
+            <th>Total de Votos para la Lista</th>
+        
+          </tr>
+        
+          <tr>
+        
+            <th>137</th>
+        
+            <th>Alianza Consenso Federal</th>
+        
+            <th>Hay Consenso</th>
+  
+            <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+        
+        
+          </tr>
+
+          <tr>
+        
+              <th>135</th>
+          
+              <th>Alianza Juntos por el Cambio</th>
+          
+              <th> 1 A</th>
+    
+              <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+              <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+              <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+          
+          
+            </tr>
+
+            <tr>
+        
+                <th>136/503</th>
+            
+                <th>Alianza Frente de Todos</th>
+            
+                <th>Celeste y Blanca 2</th>
+      
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Total Votos Agrupaciones Politicas</th>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Votos Nulos</th>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Votos Recurridos que se remiten en Sobre N°3</td>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4"></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Votos de Identidad Impugnada que se remiten en sobre N3°</th>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Votos del comando Electoral que se remiten en el Bolsin</td>
+          
+                <td ><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td ><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td ><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3" >Votos en Blanco</th>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td ><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            
+              </tr>
+
+              <tr>
+        
+                <th class="columna" colspan="3"  >Total por Columnas(*)</th>
+          
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+  
+                <td><input type="text" name="sobres"  placeholder="Parcial"  required size="3" maxlength="4" ></td>
+            
+              </tr>
+        
+        </table>
+
+</div>
+
+<h5>(*) Sr Presidente: LA SUMA DE LOS TOTALES POR COLUMNA DEBERA COINCIDIR CON LA CANTIDADF DE SOBRES UTILIZADOS EN LA URNA </h5>
+
+<table style="width:100%">
+    <tr>
+    
+        <th>Presidente</th>
+
+        <th>Supĺente</th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+
+        <th>Fiscal </th>
+    
+      </tr>
+  
+      <tr>
+    
+        <th>DNI, Nombre y Apellido completo</th>
+    
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+
+        <th>DNI, Nombre y Apellido completo</th>
+    
+      </tr>
+    
+      <tr>
+    
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+          <td><input type="text" name="sobres"  placeholder="DNI"  required size="3" maxlength="8" ></td>
+    
+      </tr>
+      <tr>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+          <td><input type="text" name="sobres"  placeholder="Nombre"  required size="3" maxlength="30" ></td>
+
+      </tr>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+          <td><input type="text" name="sobres"  placeholder="Apellido"  required size="3" maxlength="20" ></td>
+      <tr>
+
+      </tr>
+      <tr>
+       <td><td></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+          <td><input type="text" name="sobres"  placeholder="Lista"  required size="3" maxlength="10" ></td>
+      </tr>
+  
+</table>
+
+ 
+</body>
+
+
+
+
+
+
+

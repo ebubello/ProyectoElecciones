@@ -1,0 +1,161 @@
+#fondo{
+   background-image: url('/img/Elecciones/escudoargentino3.jpg');
+   background-color: currentColor;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   padding: 1%;
+   background-size: 20% 50%;
+   opacity:0.9 ;
+}
+
+#partido{
+   float: right;
+}
+
+
+#cabecera{
+    border-style: ridge;
+    border-width: 8px;
+    padding-bottom: 0px; /* cuadro superior da el largo */
+    margin: 0px;/* tamaño del cuadro en la pagina */
+    color: #998201;/* color del borde del cuadro */
+    background-color: #0355a1;/* color del fondo del cuadro */
+ }
+ #logo{
+    margin-top: -15px;/* Ubica al logo  */
+ }
+
+ #frente{
+    margin-top: -16px;/* Ubica la imagen */
+ 
+ }
+ font{
+    margin-right: 250px;/* Ubica la Fecha Actual */
+    margin-top: 80px;
+ }
+ margin-right: 50px; /* Ubica la letra Principal */
+    margin-top: 10px;
+/*
+ #seccion h5{
+    text-align: right;
+    
+   /*  margin: 10px;
+    font-size: 11px;
+    margin-right: 5%;
+   /* margin-top: 10px;
+    margin-right: 5px;
+    font-size: 12px;*/
+ }
+*/
+ .form{
+     overflow: auto;
+ }
+
+ .seccion{
+    width: 20%; 
+    border: solid 3px rgb(2, 12, 105); 
+    border-style: solid;
+    background-color: #bed3d2; /* #407f7d;*/
+    margin-left:300px;
+    margin-top: -68px;
+    padding: 0px;
+    opacity: 0.99;
+ }
+
+ .partido{
+   width: 20%; 
+   border: solid 3px rgb(2, 12, 105); 
+   border-style: solid;
+   background-color: #bed3d2; /* #407f7d;*/
+   margin-right: 150px;
+   margin-top: 10px;
+   padding: 0px;
+   opacity: 0.99;
+ }
+
+ .circuito{
+    float: right;
+   width: 20%; 
+   border: solid 3px rgb(2, 12, 105); 
+   border-style: solid;
+   background-color: #bed3d2; /* #407f7d;*/
+   margin-right: 300px;
+   margin-top: -68px;
+   padding: 0px;
+   opacity: 0.99;
+ }
+ .mesa{
+   float: right;
+   width: 20%; 
+   border: solid 3px rgb(2, 12, 105); 
+   border-style: solid;
+   background-color: #bed3d2; /* #407f7d;*/
+   margin-right: -0px;
+   margin-top: -68px;
+   padding: 0px;
+   opacity: 0.99;
+ }
+ 
+
+/*
+ .seccion h2{
+    text-align: right;
+    font: italic small-caps 900 16px arial;
+    margin: 0px;
+    border-right: 6px solid red;
+    border-bottom: 9000px solid red;
+    background-color: rgba(128,0,0,0.644);
+    color: black;
+ }
+ */
+.urna{
+   margin-top: 20px;
+   margin-left: 90px;
+}
+.agrupaciones{
+   margin-top: 30px;
+}
+
+ .table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   background-color: rgb(174, 213, 129);
+ }
+ 
+
+
+
+ #titulo{
+    color: rgb(18, 2, 87);/* da color a la letra principal */
+    text-align: left;/* Ubica la Letra Principal*/
+    font-size: 13px;/* Tamaño de Letra Principal */
+    margin-left: 100px; /* Ubica la letra Principal */
+ }
+
+ #titulo h3{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 50px;
+    font-size: 16px;
+ }
+ #titulo h4{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 100px;
+    font-size: 12px;
+ }
+ #titulo h5{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 5px;
+    font-size: 12px;
+ }
+ #titulo h6{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 5px;
+    font-size: 10px;
+ }
+
+
+ 
